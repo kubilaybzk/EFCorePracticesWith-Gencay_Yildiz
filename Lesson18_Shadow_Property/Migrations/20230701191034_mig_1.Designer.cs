@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lesson18_Shadow_Property.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230701190351_mig_1")]
+    [Migration("20230701191034_mig_1")]
     partial class mig_1
     {
         /// <inheritdoc />

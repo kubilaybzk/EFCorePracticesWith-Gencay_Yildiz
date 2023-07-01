@@ -70,7 +70,8 @@ class ApplicationDbContext : DbContext
     public DbSet<Post> Posts { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost, 1433;Database=ApplicationDb;User ID=SA;Password=1q2w3e4r+!");
+        optionsBuilder.UseSqlServer("Data Source=192.168.1.122;Initial Catalog=ShadowProperty;User ID=SA;Password=Password123;TrustServerCertificate=True");
+
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
