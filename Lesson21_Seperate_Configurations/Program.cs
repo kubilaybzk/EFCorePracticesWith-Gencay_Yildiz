@@ -19,7 +19,10 @@ Console.WriteLine();
 #endregion
 
 #region ApplyConfigurationsFromAssembly Metodu
-//Uygulama bazında oluşturulan harici konfigürasyonel sınıfların her birini OnModelCreating metodunda ApplyCOnfiguration ile tek tek bildirmek yerine bu sınıfların bulunduğu Assembly'i bildirerek IEntityTypeConfiguration arayüzünden türeyen tüm sınıfları ilgili entitye karşılık konfigürasyonel değer olarak baz almasını tek kalemde gerçekleştirmemizi sağlayan bir metottur.
+//Uygulama bazında oluşturulan harici konfigürasyonel sınıfların her birini OnModelCreating metodunda
+//ApplyCOnfiguration ile tek tek bildirmek yerine bu sınıfların bulunduğu Assembly'i bildirerek
+//IEntityTypeConfiguration arayüzünden türeyen tüm sınıfları ilgili entitye karşılık konfigürasyonel
+//değer olarak baz almasını tek kalemde gerçekleştirmemizi sağlayan bir metottur.
 #endregion
 
 class Order
