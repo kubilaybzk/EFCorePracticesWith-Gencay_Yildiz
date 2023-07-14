@@ -13,33 +13,39 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson20_Generated_Values",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson21_Separate_Configurations", "Lesson21_Seperate_Configurations\Lesson21_Separate_Configurations.csproj", "{3EC93E01-0F84-430B-A139-1604C8EC80ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson1_Basic_OnConfiguring", "Lesson1_Basic_OnConfiguring\Lesson1_Basic_OnConfiguring.csproj", "{F2619DD0-E063-4BEC-9766-B5AC77B7966B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson1_Basic_OnConfiguring", "Lesson1_Basic_OnConfiguring\Lesson1_Basic_OnConfiguring.csproj", "{F2619DD0-E063-4BEC-9766-B5AC77B7966B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2_EFCore_CrudOperations", "Lesson2_EFCore_CrudOperations\Lesson2_EFCore_CrudOperations.csproj", "{29FD4D12-8C6B-4651-B872-40FCF8B51161}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson2_EFCore_CrudOperations", "Lesson2_EFCore_CrudOperations\Lesson2_EFCore_CrudOperations.csproj", "{29FD4D12-8C6B-4651-B872-40FCF8B51161}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson4_EFCore_CrudOperations_Deletion", "Lesson4_EFCore_CrudOperations_Deletion\Lesson4_EFCore_CrudOperations_Deletion.csproj", "{F8A3040B-25C4-4C3D-B407-AEEA09251564}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson4_EFCore_CrudOperations_Deletion", "Lesson4_EFCore_CrudOperations_Deletion\Lesson4_EFCore_CrudOperations_Deletion.csproj", "{F8A3040B-25C4-4C3D-B407-AEEA09251564}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3_EFCore_CrudOperations_Update", "Lesson3_EFCore_CrudOperations_Update\Lesson3_EFCore_CrudOperations_Update.csproj", "{2A1B1F26-3496-4B34-9FD1-24B9B5CEB207}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson5_EFCore_Querys", "Lesson5_EFCore_Querys\Lesson5_EFCore_Querys.csproj", "{09E2852B-6FAD-426C-A3B4-FC96DEA13B64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson5_EFCore_Querys", "Lesson5_EFCore_Querys\Lesson5_EFCore_Querys.csproj", "{09E2852B-6FAD-426C-A3B4-FC96DEA13B64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6_ChangeTracker_Optimization", "Lesson6_ChangeTracker_Optimization\Lesson6_ChangeTracker_Optimization.csproj", "{529252AE-5220-4F35-AEAD-A7BFEBC090FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson6_ChangeTracker_Optimization", "Lesson6_ChangeTracker_Optimization\Lesson6_ChangeTracker_Optimization.csproj", "{529252AE-5220-4F35-AEAD-A7BFEBC090FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7_AsNoTracking_OptimizationV2", "Lesson7_AsNoTracking_OptimizationV2\Lesson7_AsNoTracking_OptimizationV2.csproj", "{8F3AFB17-621F-4AF0-89F0-D3E968695B0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson7_AsNoTracking_OptimizationV2", "Lesson7_AsNoTracking_OptimizationV2\Lesson7_AsNoTracking_OptimizationV2.csproj", "{8F3AFB17-621F-4AF0-89F0-D3E968695B0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson8_RelationBasics", "Lesson8_RelationBasics\Lesson8_RelationBasics.csproj", "{5EAE89E8-CE47-4B97-97A7-8C3153611F49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson8_RelationBasics", "Lesson8_RelationBasics\Lesson8_RelationBasics.csproj", "{5EAE89E8-CE47-4B97-97A7-8C3153611F49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson9_One_to_one_Relation", "Lesson9_One_to_one_Relation\Lesson9_One_to_one_Relation.csproj", "{2A1AE762-41D2-499E-8650-914731D87C94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson9_One_to_one_Relation", "Lesson9_One_to_one_Relation\Lesson9_One_to_one_Relation.csproj", "{2A1AE762-41D2-499E-8650-914731D87C94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson10_One_to_Manny_Relation", "Lesson10_One_to_Manny_Relation\Lesson10_One_to_Manny_Relation.csproj", "{C600BF74-6C87-47BB-8A29-FBA5FB766B55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson10_One_to_Manny_Relation", "Lesson10_One_to_Manny_Relation\Lesson10_One_to_Manny_Relation.csproj", "{C600BF74-6C87-47BB-8A29-FBA5FB766B55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11_Many_To_Manny_Relation", "Lesson11_Many_To_Manny_Relation\Lesson11_Many_To_Manny_Relation.csproj", "{7F570B25-0CC3-49CA-BF14-A095BEE3499D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson11_Many_To_Manny_Relation", "Lesson11_Many_To_Manny_Relation\Lesson11_Many_To_Manny_Relation.csproj", "{7F570B25-0CC3-49CA-BF14-A095BEE3499D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson12_AddRelationData", "Lesson12_AddRelationData\Lesson12_AddRelationData.csproj", "{4267A72C-221A-48AD-9A5E-03526EC2100E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson12_AddRelationData", "Lesson12_AddRelationData\Lesson12_AddRelationData.csproj", "{4267A72C-221A-48AD-9A5E-03526EC2100E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson13_AddRelationData_One_to_Manny", "Lesson13_AddRelationData_One_to_Manny\Lesson13_AddRelationData_One_to_Manny.csproj", "{7B8F7775-F8CB-4927-8B90-E4A75871820B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson13_AddRelationData_One_to_Manny", "Lesson13_AddRelationData_One_to_Manny\Lesson13_AddRelationData_One_to_Manny.csproj", "{7B8F7775-F8CB-4927-8B90-E4A75871820B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson14_AddRelationalData_Many_to_Many", "Lesson14_AddRelationalData_Many_to_Many\Lesson14_AddRelationalData_Many_to_Many.csproj", "{7A091169-5085-449A-9F73-3FCF35AF991F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson14_AddRelationalData_Many_to_Many", "Lesson14_AddRelationalData_Many_to_Many\Lesson14_AddRelationalData_Many_to_Many.csproj", "{7A091169-5085-449A-9F73-3FCF35AF991F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson15_Deleting_Relatad_Data", "Lesson15_Deleting_Relatad_Data\Lesson15_Deleting_Relatad_Data.csproj", "{20858A8C-981D-43ED-89B6-7A213A12F6B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson16_Update_Related_Data", "Lesson16_Update_Related_Data\Lesson16_Update_Related_Data.csproj", "{05D67CDF-C761-4AEA-9614-059FEE8FE3B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson17_BackingFields", "Lesson17_BackingFields\Lesson17_BackingFields.csproj", "{52940A6C-2C5E-4BBC-840C-D22C468F67D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +129,18 @@ Global
 		{7A091169-5085-449A-9F73-3FCF35AF991F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A091169-5085-449A-9F73-3FCF35AF991F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A091169-5085-449A-9F73-3FCF35AF991F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20858A8C-981D-43ED-89B6-7A213A12F6B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20858A8C-981D-43ED-89B6-7A213A12F6B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20858A8C-981D-43ED-89B6-7A213A12F6B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20858A8C-981D-43ED-89B6-7A213A12F6B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D67CDF-C761-4AEA-9614-059FEE8FE3B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D67CDF-C761-4AEA-9614-059FEE8FE3B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D67CDF-C761-4AEA-9614-059FEE8FE3B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D67CDF-C761-4AEA-9614-059FEE8FE3B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52940A6C-2C5E-4BBC-840C-D22C468F67D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52940A6C-2C5E-4BBC-840C-D22C468F67D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52940A6C-2C5E-4BBC-840C-D22C468F67D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52940A6C-2C5E-4BBC-840C-D22C468F67D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
