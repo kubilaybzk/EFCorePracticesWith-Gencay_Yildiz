@@ -50,6 +50,9 @@ class ApplicationDbContext : DbContext
     public DbSet<Post> Posts { get; set; }
     public DbSet<Blog> Blogs { get; set; }
 
+
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
@@ -57,18 +60,18 @@ class ApplicationDbContext : DbContext
             .HasData(
                 new Post() { Id = 1, BlogId = 1, Title = "A", Content = "..." },
                 new Post() { Id = 2, BlogId = 1, Title = "B", Content = "..." },
-                new Post() { Id = 5, BlogId = 2, Title = "B", Content = "..." }
+                new Post() { Id = 3, BlogId = 2, Title = "B", Content = "..." }
             );
 
         modelBuilder.Entity<Blog>()
             .HasData(
-                new Blog() { Id = 11, Url = "www.gencayyildiz.com/blog" },
+                new Blog() { Id = 1, Url = "www.gencayyildiz.com/blog" },
                 new Blog() { Id = 2, Url = "www.bilmemne.com/blog" }
             );
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-   optionsBuilder.UseSqlServer("Data Source=192.168.1.119;Initial Catalog=SeedData;User ID=SA;Password=Password123;TrustServerCertificate=True");
+   optionsBuilder.UseSqlServer("Data Source=192.168.1.118;Initial Catalog=SeedDatas;User ID=SA;Password=Password123;TrustServerCertificate=True");
 
  }
 }
