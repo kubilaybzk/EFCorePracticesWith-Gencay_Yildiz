@@ -51,9 +51,6 @@ namespace Lesson23_Inheritance_Table_Per_Hierarchy.Migrations
                 {
                     b.HasBaseType("Person");
 
-                    b.Property<int>("A")
-                        .HasColumnType("int");
-
                     b.Property<string>("CompanyName")
                         .HasColumnType("nvarchar(max)");
 
@@ -74,17 +71,8 @@ namespace Lesson23_Inheritance_Table_Per_Hierarchy.Migrations
                 {
                     b.HasBaseType("Employee");
 
-                    b.Property<int>("A")
-                        .HasColumnType("int");
-
                     b.Property<string>("Branch")
                         .HasColumnType("nvarchar(max)");
-
-                    b.ToTable("Persons", t =>
-                        {
-                            t.Property("A")
-                                .HasColumnName("Technician_A");
-                        });
 
                     b.HasDiscriminator().HasValue("Technician");
                 });

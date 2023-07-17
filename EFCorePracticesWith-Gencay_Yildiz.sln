@@ -51,6 +51,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson22_Data_Seeding", "Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson23_Inheritance_Table_Per_Hierarchy", "Lesson23_Inheritance_Table_Per_Hierarchy\Lesson23_Inheritance_Table_Per_Hierarchy.csproj", "{BD54C4C1-E50D-44ED-ADFD-5D6C2F215164}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson24_Inheritance_Table_Per_Type", "Lesson24_Inheritance_Table_Per_Type\Lesson24_Inheritance_Table_Per_Type.csproj", "{6B21F26A-0CED-44AD-870F-CEBEE7CBF56D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{BD54C4C1-E50D-44ED-ADFD-5D6C2F215164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD54C4C1-E50D-44ED-ADFD-5D6C2F215164}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD54C4C1-E50D-44ED-ADFD-5D6C2F215164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B21F26A-0CED-44AD-870F-CEBEE7CBF56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B21F26A-0CED-44AD-870F-CEBEE7CBF56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B21F26A-0CED-44AD-870F-CEBEE7CBF56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B21F26A-0CED-44AD-870F-CEBEE7CBF56D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

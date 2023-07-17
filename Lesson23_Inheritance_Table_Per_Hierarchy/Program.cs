@@ -29,21 +29,21 @@ ApplicationDbContext context = new();
 #region TPH'da Veri Ekleme
 //Davranışların hiçbirinde veri eklerken,silerken, güncellerken vs. normal operasyonların dışında bir işlem yapılmaz!
 //Hangi davranışıo kullanıyorsanız EF Core ona göre arkaplanda modellemeyi gerçekleştirecektir.
-Employee e1 = new() { Name = "Gençay", Surname = "Yıldız", Department = "Yazılım Bilgi İşlem" };
-Employee e2 = new() { Name = "Nevin", Surname = "Yıldız", Department = "Yazılım Bilgi İşlem" };
-Customer c1 = new() { Name = "Ahmet", Surname = "Bilmemne", CompanyName = "Ahmet Bilmemne Halı Kilim Yıkama" };
-Customer c2 = new() { Name = "Şuayip", Surname = "XYZ", CompanyName = "Şuayip Sucuk" };
-Technician t1 = new() { Name = "Rıfkı", Surname = "Kıllıbacak", Department = "Muhasebe", Branch = "Şöför" };
-await context.Employees.AddAsync(e1);
-await context.Employees.AddAsync(e2);
-await context.Customers.AddAsync(c1);
-await context.Customers.AddAsync(c2);
-await context.Technicians.AddAsync(t1);
-await context.SaveChangesAsync();
+//Employee e1 = new() { Name = "Gençay", Surname = "Yıldız", Department = "Yazılım Bilgi İşlem" };
+//Employee e2 = new() { Name = "Nevin", Surname = "Yıldız", Department = "Yazılım Bilgi İşlem" };
+//Customer c1 = new() { Name = "Ahmet", Surname = "Bilmemne", CompanyName = "Ahmet Bilmemne Halı Kilim Yıkama" };
+//Customer c2 = new() { Name = "Şuayip", Surname = "XYZ", CompanyName = "Şuayip Sucuk" };
+//Technician t1 = new() { Name = "Rıfkı", Surname = "Kıllıbacak", Department = "Muhasebe", Branch = "Şöför" };
+//await context.Employees.AddAsync(e1);
+//await context.Employees.AddAsync(e2);
+//await context.Customers.AddAsync(c1);
+//await context.Customers.AddAsync(c2);
+//await context.Technicians.AddAsync(t1);
+//await context.SaveChangesAsync();
 #endregion
 #region TPH'da Veri Silme
 //TPH davranışında silme operasyonu yine entity üzerinden gerçekleştirilir.
-//var employee = await context.Employees.FindAsync(1);
+//var employee = await context.Employees.FindAsync(3);
 //context.Employees.Remove(employee);
 //await context.SaveChangesAsync();
 
@@ -59,10 +59,19 @@ await context.SaveChangesAsync();
 #endregion
 #region TPH'da Veri Sorgulama
 //Veri sorgulama oeprasyonu bilinen DbSet propertysi üzerinden sorgulamadır. Ancak burada dikkat edilmesi gereken bir husus vardır. O da şu;
-//var employees = await context.Employees.ToListAsync();
-//var techs = await context.Technicians.ToListAsync();
+var employees = await context.Employees.ToListAsync();
+var techs = await context.Technicians.ToListAsync();
 //kalıtımsal ilişkiye göre yapılan sorgulamada üst sınıf alt sınıftaki verileride kapsamaktadır. O yüzden üst sınıfların sorgulamalarında alt sınıfların verileride gelecektir buna dikkat edilmelidir.
 //Sorgulama süreçlerinde EF Core generate edilen sorguya bir where şartı eklemektedir.
+
+var employees2 = await context.Employees.Where(x=>x.GetType()==typeof(Employee)) .ToListAsync();
+
+var employees3 = await context.Employees
+    .Where(e => e is Employee)
+    .ToListAsync();
+
+Console.Write("Selam");
+
 #endregion
 #region Farklı Entity'ler de Aynı İsimde Sütunların Olduğu Durumlar
 //Entitylerde mükerrer kolonlar olabilir. Bu kolonları EF core isimsel olarak özelleştirip ayıracaktır.
@@ -79,12 +88,12 @@ class Employee : Person
 }
 class Customer : Person
 {
-    public int A { get; set; }
+   
     public string? CompanyName { get; set; }
 }
 class Technician : Employee
 {
-    public int A { get; set; }
+   
     public string? Branch { get; set; }
 }
 
@@ -105,7 +114,7 @@ class ApplicationDbContext : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Data Source=192.168.1.118;Initial Catalog=TablePerHierarchy;User ID=SA;Password=Password123;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer("Data Source=192.168.1.104;Initial Catalog=TablePerHierarchy;User ID=SA;Password=Password123;TrustServerCertificate=True");
 
     }
 }

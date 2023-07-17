@@ -5,7 +5,7 @@
 namespace Lesson23_Inheritance_Table_Per_Hierarchy.Migrations
 {
     /// <inheritdoc />
-    public partial class TPH2 : Migration
+    public partial class mig1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,10 +19,8 @@ namespace Lesson23_Inheritance_Table_Per_Hierarchy.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Surname = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    A = table.Column<int>(type: "int", nullable: true),
                     CompanyName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Department = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Technician_A = table.Column<int>(type: "int", nullable: true),
                     Branch = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
