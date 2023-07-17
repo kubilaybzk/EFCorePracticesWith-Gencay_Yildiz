@@ -12,7 +12,8 @@ ApplicationDbContext context = new();
 #region TPT Nasıl Uygulanır?
 //TPT'yi uygulayabilmek için öncelikle entitylerin kendi aralarında olması gereken mantıkta inşa edilmesi gerekmektedir.
 //Entityler DbSet olarak bildirilmelidir.
-//Hiyerarşik olarak aralarında kalıtımsal ilişki olan tüm entityler OnModelCreating fonksiyonunda ToTable metodu ile konfigüre edilmelidir. Böylece EF Core kalıtımsal ilişki olan bu tablolar arasında TPT davranışının olduğunu anlayacaktır.
+//Hiyerarşik olarak aralarında kalıtımsal ilişki olan tüm entityler OnModelCreating fonksiyonunda ToTable metodu ile konfigüre edilmelidir.
+//Böylece EF Core kalıtımsal ilişki olan bu tablolar arasında TPT davranışının olduğunu anlayacaktır.
 #endregion
 #region TPT'de Veri Ekleme
 //Technician technician = new() { Name = "Şuayip", Surname = "Yıldız", Department = "Yazılım", Branch = "Kodlama" };
@@ -83,7 +84,7 @@ class ApplicationDbContext : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Data Source=192.168.1.104;Initial Catalog=TablePerHierarchy;User ID=SA;Password=Password123;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer("Data Source=192.168.1.104;Initial Catalog=TablePerType;User ID=SA;Password=Password123;TrustServerCertificate=True");
 
     }
 }
